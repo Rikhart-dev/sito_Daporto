@@ -1,0 +1,182 @@
+/* ---IMPOSTAZIONI GENERALI--- */
+
+:root{
+	--primary-color: #1E3A8A; /* blu istituzionale per Commercialisti */
+	--secondary-color: #87CCEB; /* azzurro per generare constrasto */
+	--text-dark: #1F2937;
+	--text-light: #F9FAFB;
+	--bg-light: #FFFFFF;
+	--bg-alt: #F3F4F6;
+
+	/* Font universali e leggeri */
+	--font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+	font-family: var(--font-main);
+	color: var(--text-dark);
+	background-color: var(--bg-light);
+	margin: 0;
+	padding: 0;
+}
+
+/* ---BARRA DI NAVIGAZIONE--- */
+
+.navbar{
+	background-color: var(--primary-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 100; 
+}
+
+.logo{
+	color: var(--text-light);
+	font-size: 24px;	
+	font-weight: bold;
+	padding: 10px;
+}
+
+.menu{
+	display: flex;
+	gap: 30px;
+	padding: 10px;
+}
+
+.menu ul{
+	list-style: none;
+}
+
+.menu a{
+	color: var(--text-light);
+	text-decoration: none;
+	font-size: 16px;
+}
+
+/* effetto al passaggio del mouse */
+.menu a:hover{
+	text-decoration: underline;
+}
+
+/* ---HERO SECTION--- */
+
+.hero-section{
+	background-color: var(--bg-alt);
+	color: var(--text-dark);
+	text-align: center;
+}
+
+.btn-cta{
+	background-color: var(--primary-color);
+	color: var(--text-light);
+	border: none;
+	text-decoration: none;
+	padding: 12px 24px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+.btn-cta:hover{
+	background-color: var(--secondary-color);
+}
+
+/* ---FEATURES--- */
+
+.features{
+	background-color: var(--bg-alt);
+	text-align: center;
+} 
+
+/* ---SEZIONE SERVIZI--- */
+
+.servizi{
+	background-color: var(--bg-alt);
+}
+
+.servizi h2, .servizi h3, .servizi p{
+	text-align: center;
+}
+
+.container-servizi{
+	display: flex;
+	gap: 30px;
+	margin-top: 40px;
+	flex-wrap: wrap;
+}
+
+.box-servizi{
+	flex: 1;
+	background-color: var(--bg-light);
+	color: var(--text-dark);
+	padding: 30px;
+	border-radius: 8px;
+	border: 1px solid var(--text-dark);
+}
+
+/* ---RECENSIONI--- */
+
+.recensioni{
+	background-color: var(--bg-alt);
+	text-align: center;
+}
+
+.recensioni-grid{
+	grid-template-columns: repeat (auto-fit, minmax(320px, 1fr));
+	gap: 40px;
+}
+
+.recensioni-card{
+	background-color: var(--bg-light);	
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+	border: 1px solid var(--text-dark);
+}
+
+.recensioni-info{
+	padding: 25px;
+}
+
+.recensioni-info h3{
+	margin-bottom: 10px;
+	font-size: 1.4rem;
+}
+
+.recensioni-info p{
+	color: var(--text-dark);
+	font-size: 0.95rem;
+}
+
+.tags{
+	dispaly: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin-bottom: 20px; 
+}
+
+/* ---CONTATTI--- */
+
+.contatti{
+	background-color: var(--bg-alt);
+	text-align: center;
+}
+
+/* ---FOOTER--- */ 
+footer{
+	background-color: var(--primary-color);
+	color: var(--text-light);
+	text-align: center;
+}
+
+footer a{
+	text-decoration: none;
+	color: var(--text-light);
+}
+
+footer a:hover{
+	text-decoration: underline;
+}
+
+
